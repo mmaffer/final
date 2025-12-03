@@ -5,7 +5,6 @@ import type { IUser } from '../types';
 import { UserCard } from '../components/UserCard';
 import { SkeletonCard } from '../components/SkeletonCard';
 
-// --- Variantes de Animación ---
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -55,14 +54,14 @@ const Home = () => {
         
         {error && <p className="text-center text-red-500">Error: {error.message}</p>}
         
-        {/* 👇 AQUÍ ESTÁ EL ARREGLO 👇 */}
+        {}
         {loading ? (
-          // 1. Si está cargando, muestra los Skeletons (sin animación)
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {renderSkeletons()}
           </div>
         ) : (
-          // 2. Cuando la carga TERMINA, muestra el contenedor animado
+          
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
             variants={containerVariants}

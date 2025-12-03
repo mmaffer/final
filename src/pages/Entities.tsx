@@ -5,7 +5,6 @@ import type { IPost } from '../types';
 import { PostCard } from '../components/PostCard';
 import { SkeletonCard } from '../components/SkeletonCard';
 
-// --- Variantes de Animación ---
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaUserCircle } from 'react-icons/fa'; // Icono de ejemplo
+import { FaUserCircle } from 'react-icons/fa'; 
 import type { IUser } from '../types';
 
 interface UserCardProps {

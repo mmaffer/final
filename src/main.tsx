@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom' // 1. Importar
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter> {/* 2. Envolver App */}
+    <BrowserRouter> {}
       <App />
     </BrowserRouter>
   </React.StrictMode>,

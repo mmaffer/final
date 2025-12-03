@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { FaDatabase } from 'react-icons/fa'; // Icono para el logo
+import { FaDatabase } from 'react-icons/fa'; 
 
 const Navbar = () => {
   const activeClassName = "font-bold text-yellow-300";
@@ -24,12 +24,12 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink 
-              to="/entities" 
+              to="/contact" 
               className={({ isActive }) => 
                 `transition-colors duration-200 ${isActive ? activeClassName : 'hover:text-yellow-300'}`
               }
             >
-              Entidades
+              Contacto
             </NavLink>
           </div>
         </div>

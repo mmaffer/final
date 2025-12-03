@@ -29,10 +29,8 @@ export function useFetchData<T>(fetchFunction: () => Promise<T>): FetchState<T> 
 
     loadData();
     
-    // 👇 ¡AQUÍ ESTÁ EL CAMBIO! 👇
-    // Quitamos [fetchFunction] y lo dejamos como un array vacío [].
-    // Esto asegura que el efecto se ejecute SOLO UNA VEZ cuando el componente se monta.
-  }, []); // <-- DEJA ESTO VACÍO
+    
+  }, []); 
 
   return state;
 }
