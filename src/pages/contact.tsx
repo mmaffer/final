@@ -1,13 +1,14 @@
 import { useState } from "react";
+import type { ChangeEvent, FormEvent } from "react";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [success, setSuccess] = useState(false);
 
-  const handleChange = (e) =>
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!form.name || !form.email) return alert("Completa los campos requeridos");
@@ -43,7 +44,7 @@ export default function Contact() {
         <textarea
           className="form-control"
           name="message"
-          rows="4"
+          rows={4}
           value={form.message}
           onChange={handleChange}
         ></textarea>
